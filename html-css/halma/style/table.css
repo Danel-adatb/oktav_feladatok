@@ -1,0 +1,19 @@
+.costum-table {
+    width: 80%;
+    border: 1pt solid #000;
+    background-color: #E9967A;
+}
+
+.costum-table td {
+    border: 1pt solid #000000;
+    padding: 5px;
+}
+
+#babu {
+    border: 1pt solid #000000;
+}
+
+#halma-gif {
+    display: block;
+    margin: 0 auto;
+}
