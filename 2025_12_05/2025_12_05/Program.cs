@@ -9,7 +9,7 @@ namespace _2025_12_05
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Choose a Task to run (Task 1 => Task 9):");
+            Console.WriteLine("Choose a Task to run (Task 1 => Task 10):");
             int taskNumber = int.Parse(Console.ReadLine());
 
             switch (taskNumber)
@@ -23,6 +23,7 @@ namespace _2025_12_05
                 case 7: TaskSeven(); break;
                 case 8: TaskEight(); break;
                 case 9: TaskNine(); break;
+                case 10: TaskTen(); break;
             }
         }
 
@@ -130,6 +131,19 @@ namespace _2025_12_05
             Console.WriteLine($"Number1 % number2 = {number % numberTheSecond}");
 
             return 9;
+        }
+
+        static int TaskTen()
+        {
+            Console.WriteLine("Give number A:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Give number B:");
+            int b = int.Parse(Console.ReadLine());
+
+            double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+            Console.WriteLine($"C: {c}");
+
+            return 10;
         }
     }
 }
