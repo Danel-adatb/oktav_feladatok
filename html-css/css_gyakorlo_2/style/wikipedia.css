@@ -1,0 +1,24 @@
+#wikipedia {
+    display: flex;
+    padding: 0;
+}
+
+.wiki-main {
+    padding: 10px 16px;
+    font-weight: 600;
+}
+
+.wiki-icon-button {
+    padding: 10px 12px;
+    background-color: #eaeaea;
+    border-left: 2px solid #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wiki-icon-button img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}

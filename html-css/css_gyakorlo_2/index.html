@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/wikipedia.css">
+  <link rel="stylesheet" href="style/added-image.css">
+  <link rel="stylesheet" href="style/table.css">
+  <link rel="stylesheet" href="style/costum-button.css">
+  <link rel="stylesheet" href="style/form-content.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <title>HTML/CSS Gyakorló II.</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content" id="film-list">
+      <ul>
+        <li>
+          <strong>Interstellar</strong>
+          <p>
+            Egy mélyen gondolatébresztő sci-fi, amely az emberiség túlélését,
+            az idő relativitását és a családi kötelék erejét helyezi fókuszba.
+          </p>
+        </li>
+
+        <li>
+          <strong>Inception</strong>
+          <p>
+            Egy komplex és látványos álom-heist film, amely különböző tudatszinteken
+            navigálva feszegeti a valóság határait. Intelligens, tempós, ikonikus.
+          </p>
+        </li>
+
+        <li>
+          <strong>The Dark Knight</strong>
+          <p>
+            Christopher Nolan sötét hangulatú Batman-filmje,
+            Heath Ledger legendás Joker-alakításával. Morálról,
+            káoszról és hősiességről szól kompromisszummentesen.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content" id="favourite-food">
+      <H2>Kedvenc ételeim</H2>
+      <ul>
+        <li>Spagetti</li>
+        <li>Rakott krumpli</li>
+        <li>Rakott kelkáposzta</li>
+        <li>palacsinta</li>
+      </ul>
+    </div>
+
+    <div class="content" id="wikipedia">
+        <a href="https://wikipedia.org" target="_blank" class="wiki-main">
+          Wikipédia
+        </a>
+        <div class="wiki-icon-button">
+          <img src="public/wiki_logo.svg" alt="Wikipedia logo">
+        </div>
+    </div>
+
+    <div class="content" id="added-image">
+      <img src="public/example.jpg" alt="example">
+    </div>
+
+    <div class="content" id="costum-table">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Címsor 1</th>
+            <th>Címsor 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sor 1 Mező 1</td>
+            <td>Sor 1 Mező 2</td>
+          </tr>
+          <tr>
+            <td>Sor 2 Mező 1</td>
+            <td>Sor 2 Mező 2</td>
+          </tr>
+          <tr>
+            <td>Sor 3 Mező 1</td>
+            <td>Sor 3 Mező 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content" id="costum-button">
+      <button>Button</button>
+    </div>
+
+    <div class="content" id="form-content">
+      <form id="my-form">
+        <label>
+          Név
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <input type="submit" value="Küldés" />
+      </form>
+      <span id="success-message" style="display:none; color:green; font-weight:600;">
+        Üzenet elküldve!
+      </span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Minden jog fenntartva.</p>
+  </div>
+
+  <script>
+    document.getElementById("my-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("success-message").style.display = "block";
+    });
+  </script>
+</body>
+
+</html>

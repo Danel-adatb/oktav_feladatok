@@ -1,0 +1,14 @@
+#added-image {
+    padding: 5px;
+    border: unset;
+    background-color: unset;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#added-image img {
+    width: 30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
