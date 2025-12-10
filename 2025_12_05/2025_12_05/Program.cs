@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _2025_12_05_SZD
+namespace _2025_12_05
 {
     internal class Program
     {
@@ -12,7 +12,7 @@ namespace _2025_12_05_SZD
             Console.WriteLine("Choose a Task to run (Task 1 => Task 9):");
             int taskNumber = int.Parse(Console.ReadLine());
 
-            switch(taskNumber)
+            switch (taskNumber)
             {
                 case 1: TaskOne(); break;
                 case 2: TaskTwo(); break;
@@ -112,7 +112,7 @@ namespace _2025_12_05_SZD
         {
             Console.WriteLine("Give a Celsius value in Double:");
             double number = double.Parse(Console.ReadLine());
-            
+
             Console.WriteLine($"F = {number * 1.8 + 32}");
 
             return 8;

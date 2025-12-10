@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{590F7F36-6B41-474C-85E1-F91599D41FF9}</ProjectGuid>
+    <ProjectGuid>{27D3540F-0A1B-4369-8D89-B292004C979A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2025_12_05_SZD</RootNamespace>
-    <AssemblyName>2025_12_05_SZD</AssemblyName>
+    <RootNamespace>_2025_12_05</RootNamespace>
+    <AssemblyName>2025_12_05</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
