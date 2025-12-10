@@ -1,0 +1,7 @@
+C:\Users\dszabo\Desktop\Oktav_C#\2025_12_05_SZD\2025_12_05_SZD\bin\Debug\2025_12_05_SZD.exe.config
+C:\Users\dszabo\Desktop\Oktav_C#\2025_12_05_SZD\2025_12_05_SZD\bin\Debug\2025_12_05_SZD.exe
+C:\Users\dszabo\Desktop\Oktav_C#\2025_12_05_SZD\2025_12_05_SZD\bin\Debug\2025_12_05_SZD.pdb
+C:\Users\dszabo\Desktop\Oktav_C#\2025_12_05_SZD\2025_12_05_SZD\obj\Debug\2025_12_05_SZD.csproj.AssemblyReference.cache
+C:\Users\dszabo\Desktop\Oktav_C#\2025_12_05_SZD\2025_12_05_SZD\obj\Debug\2025_12_05_SZD.csproj.CoreCompileInputs.cache
+C:\Users\dszabo\Desktop\Oktav_C#\2025_12_05_SZD\2025_12_05_SZD\obj\Debug\2025_12_05_SZD.exe
+C:\Users\dszabo\Desktop\Oktav_C#\2025_12_05_SZD\2025_12_05_SZD\obj\Debug\2025_12_05_SZD.pdb
