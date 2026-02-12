@@ -18,6 +18,9 @@ namespace _2026_01_24
                 [7] = ("Task07", Task07.Run),
                 [8] = ("Task08", Task08.Run),
                 [9] = ("Task09", Task09.Run),
+                [12] = ("Task12", Task12.Run),
+                [13] = ("Task13", Task13.Run),
+                [14] = ("Task14", Task14.Run),
             };
 
             while (true)

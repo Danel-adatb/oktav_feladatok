@@ -29,8 +29,22 @@ public class Reader
             Console.WriteLine("Invalid double. Try again.");
         }
     }
+    
+    public static double ReadPositiveDouble(string prompt)
+    {
+        while (true)
+        {
+            Console.Write(prompt);
+            var input = Console.ReadLine();
 
-    public static int ReadIntWithNegativityValidation(string prompt)
+            if (double.TryParse(input?.Trim(), out var value) && value > 0)
+                return value;
+
+            Console.WriteLine("Invalid double. Try again.");
+        }
+    }
+
+    public static int ReadPositiveInt(string prompt)
     {
         while (true)
         {
