@@ -59,4 +59,18 @@ public class Reader
             Console.WriteLine("Invalid integer. Try again.");
         }
     }
+
+    public static string ReadString(string prompt)
+    {
+        while (true)
+        {
+            Console.Write(prompt);
+            var input = Console.ReadLine();
+
+            if (!string.IsNullOrWhiteSpace(input))
+                return input.Trim();
+            
+            Console.WriteLine("Please enter a string value. Try again.");
+        }
+    }
 }

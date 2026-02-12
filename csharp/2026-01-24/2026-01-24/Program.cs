@@ -1,5 +1,6 @@
 ﻿
 using _2026_01_24.tasks.alapFeladatok01;
+using _2026_01_24.tasks.alapFeladatok02;
 
 namespace _2026_01_24
 {
@@ -21,6 +22,21 @@ namespace _2026_01_24
                 [12] = ("Task12", Task12.Run),
                 [13] = ("Task13", Task13.Run),
                 [14] = ("Task14", Task14.Run),
+                
+                [15] = ("Task15", Task15.Run),
+                [16] = ("Task16", Task16.Run),
+                [17] = ("Task17", Task17.Run),
+                [18] = ("Task18", Task18.Run),
+                [19] = ("Task19", Task19.Run),
+                [20] = ("Task20", Task20.Run),
+                [21] = ("Task21", Task21.Run),
+                [22] = ("Task22", Task22.Run),
+                [23] = ("Task23", Task23.Run),
+                [24] = ("Task24", Task24.Run),
+                [26] = ("Task26", Task26.Run),
+                [27] = ("Task27", Task27.Run),
+                [28] = ("Task28", Task28.Run),
+                [29] = ("Task29", Task29.Run),
             };
 
             while (true)
@@ -28,9 +44,9 @@ namespace _2026_01_24
                 Console.WriteLine();
                 Console.WriteLine("Available tasks:");
                 foreach (var t in tasks)
-                    Console.WriteLine($"{t.Key}. {t.Value.Name}");
+                    Console.Write($"{t.Key} ");
 
-                Console.Write("Choose (number) or 'q' to quit: ");
+                Console.Write("\nChoose (number) or 'q' to quit: ");
                 var input = Console.ReadLine()?.Trim();
 
                 if (string.Equals(input, "q", StringComparison.OrdinalIgnoreCase))
@@ -38,13 +54,13 @@ namespace _2026_01_24
 
                 if (!int.TryParse(input, out var choice))
                 {
-                    Console.WriteLine("Invalid input. Try again.");
+                    Console.WriteLine("\nInvalid input. Try again.");
                     continue;
                 }
 
                 if (!tasks.TryGetValue(choice, out var task))
                 {
-                    Console.WriteLine("Unknown task. Try again.");
+                    Console.WriteLine("\nUnknown task. Try again.");
                     continue;
                 }
 
