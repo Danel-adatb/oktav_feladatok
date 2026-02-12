@@ -1,6 +1,8 @@
 ﻿
 using _2026_01_24.tasks.alapFeladatok01;
 using _2026_01_24.tasks.alapFeladatok02;
+using _2026_01_24.tasks.alapFeladatok03;
+using _2026_01_24.tasks.alapFeladatok04;
 
 namespace _2026_01_24
 {
@@ -37,6 +39,21 @@ namespace _2026_01_24
                 [27] = ("Task27", Task27.Run),
                 [28] = ("Task28", Task28.Run),
                 [29] = ("Task29", Task29.Run),
+                [30] = ("Task30", Task30.Run),
+                [31] = ("Task31", Task31.Run),
+                
+                [32] = ("Task32", Task32.Run),
+                [33] = ("Task33", Task33.Run),
+                [35] = ("Task35", Task35_HW.Run),
+                
+                [42] = ("Task42", Task42.Run),
+                [43] = ("Task43", Task43_HW.Run),
+                [44] = ("Task44", Task44.Run),
+                [45] = ("Task45", Task45.Run),
+                [46] = ("Task46", Task46_HW.Run),
+                [47] = ("Task47", Task47.Run),
+                [48] = ("Task48", Task48_HW.Run),
+                [49] = ("Task49", Task49.Run),
             };
 
             while (true)
