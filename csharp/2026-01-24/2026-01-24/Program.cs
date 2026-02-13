@@ -45,6 +45,10 @@ namespace _2026_01_24
                 [32] = ("Task32", Task32.Run),
                 [33] = ("Task33", Task33.Run),
                 [35] = ("Task35", Task35_HW.Run),
+                [36] = ("Task36", Task36.Run),
+                [37] = ("Task37", Task37.Run),
+                [38] = ("Task38", Task38.Run),
+                [39] = ("Task39", Task39.Run),
                 
                 [42] = ("Task42", Task42.Run),
                 [43] = ("Task43", Task43_HW.Run),
