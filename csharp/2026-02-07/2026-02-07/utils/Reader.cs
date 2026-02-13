@@ -2,6 +2,8 @@
 
 public class Reader
 {
+    private static readonly string SourcePath = @"C:\GitHubPersonal\oktav_feladatok\csharp\2026-02-07\2026-02-07\sources";
+    
     public static int ReadInt(string prompt)
     {
         while (true)
@@ -72,5 +74,11 @@ public class Reader
             
             Console.WriteLine("Please enter a string value. Try again.");
         }
+    }
+
+    public static string[] ReadFile(string file)
+    {
+        var filePath = Path.Combine(SourcePath, file);
+        return File.ReadAllLines(filePath);
     }
 }

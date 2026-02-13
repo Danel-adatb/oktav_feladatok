@@ -1,0 +1,11 @@
+10
+valamilyen
+alma
+fogoly
+kicsi
+semmisem
+egy
+hat
+nyolc
+ablak
+sok

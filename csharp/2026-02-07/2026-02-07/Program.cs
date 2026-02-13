@@ -1,5 +1,6 @@
 ﻿
 using _2026_02_07.tasks.alapFeladatok05;
+using _2026_02_07.tasks.alapFeladatok06;
 
 namespace _2026_02_07
 {
@@ -17,6 +18,19 @@ namespace _2026_02_07
                 [55] = ("Task55", Task55.Run),
                 [56] = ("Task56", Task56.Run),
                 [57] = ("Task57", Task57.Run),
+                
+                [58] = ("Task58", Task58.Run),
+                [59] = ("Task59", Task59.Run),
+                [60] = ("Task60", Task60.Run),
+                [61] = ("Task61", Task61.Run),
+                [62] = ("Task62", Task62.Run),
+                [63] = ("Task63", Task63.Run),
+                [64] = ("Task64", Task64.Run),
+                [65] = ("Task65", Task65.Run),
+                [66] = ("Task66", Task66.Run),
+                [67] = ("Task67", Task67.Run),
+                [68] = ("Task68", Task68.Run),
+                [69] = ("Task69", Task69.Run),
             };
 
             while (true)
