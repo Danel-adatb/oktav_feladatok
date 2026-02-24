@@ -2,7 +2,7 @@
 
 public class Employee : Person
 {
-    public long Salary;
+    long Salary { get; set; } //private
 
     public Employee(string name, int age, long salary)
         : base(name, age)

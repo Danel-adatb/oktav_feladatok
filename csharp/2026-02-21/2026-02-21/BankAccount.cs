@@ -2,7 +2,7 @@
 
 public class BankAccount
 {
-    public long Balance { get; set; }
+    long Balance { get; set; } //private
 
     public BankAccount(long balance)
     {
