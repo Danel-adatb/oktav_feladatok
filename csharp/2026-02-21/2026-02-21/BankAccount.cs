@@ -3,6 +3,11 @@
 public class BankAccount
 {
     private long balance;
+    
+    public long Balance
+    {
+        get { return balance; }
+    }
 
     public BankAccount(long balance)
     {

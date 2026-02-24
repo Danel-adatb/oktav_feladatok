@@ -9,7 +9,7 @@ namespace _2026_02_21
             try
             {
                 Person p1 = new Person("Person One", 28);
-                Student s1 = new Student("Student One", 27, "XUXEJOasd");
+                Student s1 = new Student("Student One", 27, "XUXEJO");
                 Student s2 = new Student("Student Two", 37, "XUXEJU");
                 Student s3 = new Student("Student Three", 19, "XUXEJA");
                 Employee e1 = new Employee("Employee One", 49, 380000);
@@ -25,6 +25,11 @@ namespace _2026_02_21
                     Console.WriteLine(student.ToString());
                 }
                 Console.WriteLine(e1);
+
+                var ba = new BankAccount(100000);
+                Console.WriteLine($"Balance: {ba.Balance}");
+                Console.WriteLine($"Deposit: {ba.deposit(10000)}");
+                Console.WriteLine($"Withdraw: {ba.withdraw(10000)}");
             }
             catch (Exception e)
             {
