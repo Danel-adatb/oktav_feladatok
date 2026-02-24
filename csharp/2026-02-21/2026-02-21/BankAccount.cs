@@ -2,27 +2,27 @@
 
 public class BankAccount
 {
-    long Balance { get; set; } //private
+    private long balance;
 
     public BankAccount(long balance)
     {
-        Balance = balance;
+        this.balance = balance;
     }
 
     public long deposit(long amount)
     {
         amount = Math.Abs(amount);
-        Balance += amount;
-        validation(Balance);
-        return Balance;
+        balance += amount;
+        validation(balance);
+        return balance;
     }
 
     public long withdraw(long amount)
     {
         amount = Math.Abs(amount);
-        Balance -= amount;
-        validation(Balance);
-        return Balance;
+        balance -= amount;
+        validation(balance);
+        return balance;
     }
 
     private void validation(long amount)

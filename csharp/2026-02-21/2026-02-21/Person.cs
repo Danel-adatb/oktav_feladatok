@@ -4,29 +4,29 @@ using System;
 
 public class Person
 {
-    protected string Name { get; set; }
+    protected string name;
 
-    private int _age;
+    private int age;
 
     public int Age
     {
-        get { return _age; }
+        get { return age; }
         set
         {
             if (value < 0)
                 throw new ArgumentException("The age cannot be negative!");
-            _age = value;
+            age = value;
         }
     }
 
     public Person(string name, int age)
     {
-        Name = name;
+        this.name = name;
         Age = age;
     }
 
     public override string ToString()
     {
-        return $"{Name} vagyok és {Age} éves.";
+        return $"{name} vagyok és {Age} éves.";
     }
 }

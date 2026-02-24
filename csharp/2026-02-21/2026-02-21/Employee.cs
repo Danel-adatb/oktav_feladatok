@@ -2,16 +2,16 @@
 
 public class Employee : Person
 {
-    long Salary { get; set; } //private
+    private long salary;
 
     public Employee(string name, int age, long salary)
         : base(name, age)
     {
-        Salary = salary;
+        this.salary = salary;
     }
     
     public override string ToString()
     {
-        return $"{Name} nevű munkás vagyok és {Age} éves. A fizetésem:  {Salary}";
+        return $"{name} nevű munkás vagyok és {Age} éves. A fizetésem:  {salary}";
     }
 }

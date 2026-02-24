@@ -2,27 +2,27 @@
 
 public class Student : Person
 {
-    private string _neptunCode;
+    private string neptun;
 
-    public string NeptunCode
+    public string Neptun
     {
-        get { return _neptunCode; }
+        get { return neptun; }
         set
         {
             if (value.Length > 6)
                 throw new ArgumentException("The neptun code cannot be longer than 6 characters!");
-            _neptunCode = value;
+            neptun = value;
         }
     }
 
-    public Student(string name, int age, string neptunCode)
+    public Student(string name, int age, string neptun)
         : base(name, age)
     {
-        NeptunCode = neptunCode;
+        Neptun = neptun;
     }
     
     public override string ToString()
     {
-        return $"{Name} tanuló vagyok és {Age} éves. A neptunkódom:  {NeptunCode}";
+        return $"{name} tanuló vagyok és {Age} éves. A neptunkódom:  {Neptun}";
     }
 }
