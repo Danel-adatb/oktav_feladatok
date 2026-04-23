@@ -2,7 +2,7 @@
 
 public class Helsinki
 {
-    public static readonly string SourcePath = @"C:\projects\oktav_feladatok\csharp\2026-03-07\2026-03-07\sources";
+    public static readonly string SourcePath = @"C:\GitHubPersonal\oktav_feladatok\csharp\2026-03-07\2026-03-07\sources";
     
     private static readonly Dictionary<int, int> PointMap = new  Dictionary<int, int> {
         { 1, 7 },
@@ -14,9 +14,9 @@ public class Helsinki
     };
     
     //Feladat 2.
-    public static List<DataRow> ReadDataFromFile(string fileName)
+    public static List<DataRowHelsinki> ReadDataFromFile(string fileName)
     {
-        var result = new List<DataRow>();
+        var result = new List<DataRowHelsinki>();
 
         var filePath = Path.Combine(SourcePath, fileName);
         foreach (var line in File.ReadAllLines(filePath))
@@ -29,7 +29,7 @@ public class Helsinki
             if (parts.Length < 4)
                 continue; // skip malformed lines
 
-            result.Add(new DataRow
+            result.Add(new DataRowHelsinki
             {
                 Placement  = int.Parse(parts[0]),
                 RacerCount = int.Parse(parts[1]),
@@ -42,13 +42,13 @@ public class Helsinki
     }
 
     //Feladat 3.
-    public static int CountPlacements(List<DataRow> rows)
+    public static int CountPlacements(List<DataRowHelsinki> rows)
     {
         return rows.Count();
     }
         
     //Feladat 4.
-    public static void MedalStatistics(List<DataRow> rows)
+    public static void MedalStatistics(List<DataRowHelsinki> rows)
     {
         var medals = rows
             .Where(x => x.Placement >= 1 && x.Placement <= 3)
@@ -66,7 +66,7 @@ public class Helsinki
     }
     
     //Feladat 5.
-    public static void PointStatistics(List<DataRow> rows)
+    public static void PointStatistics(List<DataRowHelsinki> rows)
     {
         int totalPoints = rows
             .Where(x => PointMap.ContainsKey(x.Placement))
@@ -76,7 +76,7 @@ public class Helsinki
     }
     
     //Feladat 6.
-    public static void WhichSportIsBest(List<DataRow> rows)
+    public static void WhichSportIsBest(List<DataRowHelsinki> rows)
     {
         int uszas = rows.Count(x => x.Placement <= 3 && x.SportName == "uszas");
         int torna  = rows.Count(x => x.Placement <= 3 && x.SportName == "torna");
@@ -118,7 +118,7 @@ public class Helsinki
     }
     
     //Feladat 8.
-    public static void MostRacers(List<DataRow> rows)
+    public static void MostRacers(List<DataRowHelsinki> rows)
     {
         var max = rows.Max(x => x.RacerCount);
         var biggest = rows.Where(x => x.RacerCount == max).ToList();

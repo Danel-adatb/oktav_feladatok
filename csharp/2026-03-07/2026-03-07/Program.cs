@@ -27,6 +27,8 @@ namespace _2026_03_07
         {
             var rows = Helsinki.ReadDataFromFile("helsinki.txt");
 
+            Console.WriteLine("Helsinki");
+            
             Console.WriteLine("2. Feladat");
             foreach (var row in rows)
             {
@@ -56,7 +58,21 @@ namespace _2026_03_07
 
         public static void TaskFootGold()
         {
-            Console.WriteLine("Ahoj");
+            var rows = Footgolf.ReadDataFromFile("fob2016.txt");
+
+            Console.WriteLine("Footgolf");
+            
+            Console.WriteLine("2. Feladat");
+            foreach (var row in rows)
+            {
+                Console.WriteLine($"{row.Name} | {row.Category} | {row.Club} | {string.Join(", ", row.Points)}");
+            }
+            
+            Console.WriteLine("3. Feladat");
+            Footgolf.CountNamesByCategory(rows);
+            
+            Console.WriteLine("4. Feladat");
+            Footgolf.WomenRatio(rows);
         }
     }
 }
