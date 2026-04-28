@@ -73,6 +73,18 @@ namespace _2026_03_07
             
             Console.WriteLine("4. Feladat");
             Footgolf.WomenRatio(rows);
+            
+            Console.WriteLine("5. Feladat");
+            Footgolf.CalculateScore(rows);
+            
+            Console.WriteLine("6. Feladat");
+            Footgolf.WinnerWoman(rows);
+            
+            Console.WriteLine("7. Feladat");
+            Footgolf.MenStats(rows);
+            
+            Console.WriteLine("8. Feladat");
+            Footgolf.ClubStats(rows);
         }
     }
 }

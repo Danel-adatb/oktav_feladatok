@@ -14,4 +14,5 @@ public class DataRowFootgolf
     public string Category { get; set; }
     public string Club { get; set; }
     public List<int> Points { get; set; }
+    public int? TotalPoints { get; set; }
 }
