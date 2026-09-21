@@ -1,0 +1,18 @@
+﻿<Window x:Class="gyartok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gyartok"
+        mc:Ignorable="d"
+        Title="Gyártók" Height="406" Width="800">
+    <Grid Margin="10,10,10,10">
+        
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged" Margin="10,10,180,10"/>
+        <Button Content="Darabszám" HorizontalAlignment="Left" Margin="605,25,0,0" VerticalAlignment="Top" Height="20" Width="165"/>
+        <Button Content="Legtöbb leányvállalat" HorizontalAlignment="Left" Margin="605,68,0,0" VerticalAlignment="Top" Height="20" Width="165"/>
+        <Button Content="Kilépés" HorizontalAlignment="Left" Margin="605,340,0,0" VerticalAlignment="Top" Height="20" Width="165"/>
+
+
+    </Grid>
+</Window>
