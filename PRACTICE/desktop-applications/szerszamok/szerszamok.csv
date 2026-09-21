@@ -1,0 +1,21 @@
+sorszám,gyártó,szerszám típusa,ár,áramforrás,kölcsönzési díj
+1,Bosch,fúrógép,32990,hálózati,2500
+2,Makita,akkus csavarozó,45990,akkumulátoros,3000
+3,DeWalt,sarokcsiszoló,28490,hálózati,2200
+4,Hilti,ütvefúró,89990,hálózati,5500
+5,Makita,láncfűrész,72990,benzines,4800
+6,Bosch,szúrófűrész,24990,hálózati,1800
+7,Milwaukee,akkus fúró-csavarozó,54990,akkumulátoros,3500
+8,Metabo,körfűrész,41990,hálózati,2900
+9,Stihl,láncfűrész,98990,benzines,6000
+10,Ryobi,akkus sövényvágó,37990,akkumulátoros,2600
+11,Festool,gyalu,64990,hálózati,3800
+12,Einhell,hőlégfúvó,15990,hálózati,1200
+13,Black+Decker,ütvecsavarozó,33990,akkumulátoros,2400
+14,Bosch,szalagcsiszoló,44990,hálózati,3100
+15,Stanley,kalapács,4990,kézi,500
+16,Makita,rezgőcsiszoló,29990,hálózati,2000
+17,DeWalt,vésőkalapács,79990,hálózati,5000
+18,Hilti,betontörő,129990,hálózati,8500
+19,Ryobi,akkus flex,42990,akkumulátoros,2800
+20,Metabo,asztali fúrógép,58990,hálózati,36600
