@@ -2,10 +2,8 @@
 
 namespace backend.Models
 {
-    public class Manufacturer
+    public class ManufacturerDTO
     {
-        [Key]
-        public int Id { get; set; }
         [MaxLength(30)]
         public string Name { get; set; }
         public int Founded { get; set; }

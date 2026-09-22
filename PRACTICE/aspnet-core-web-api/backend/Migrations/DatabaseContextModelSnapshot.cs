@@ -37,7 +37,7 @@ namespace backend.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("varchar(30)");
 
-                    b.Property<int>("subsidiary")
+                    b.Property<int>("Subsidiary")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -53,7 +53,8 @@ namespace backend.Migrations
 
                     b.Property<string>("Manufacturer")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.Property<int>("Price")
                         .HasColumnType("int");
@@ -66,11 +67,13 @@ namespace backend.Migrations
 
                     b.Property<string>("Source")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.HasKey("Id");
 

@@ -10,8 +10,8 @@ using backend.Config.DB;
 namespace backend.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20260921143407_InitialDb")]
-    partial class InitialDb
+    [Migration("20260922085919_Vizsga")]
+    partial class Vizsga
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,7 +40,7 @@ namespace backend.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("varchar(30)");
 
-                    b.Property<int>("subsidiary")
+                    b.Property<int>("Subsidiary")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -56,7 +56,8 @@ namespace backend.Migrations
 
                     b.Property<string>("Manufacturer")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.Property<int>("Price")
                         .HasColumnType("int");
@@ -69,11 +70,13 @@ namespace backend.Migrations
 
                     b.Property<string>("Source")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.HasKey("Id");
 
