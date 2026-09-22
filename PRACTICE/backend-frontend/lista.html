@@ -1,0 +1,29 @@
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <link href="./style.css" rel="stylesheet" />
+    </HEAD>
+    <BODY>
+        <H1>Szerszámok</H1>
+        <div id="filter">
+            <label>Típus:</label>
+            <input type="text" id="tipus" placeholder="Ide írj a szűréshez!">
+        </div>
+        <div id="results">
+            <table class="result-table">
+                <thead>
+                    <tr>
+                        <th>Gyártó</th>
+                        <th>Típus</th>
+                        <th>Kölcsönzési ár</th>
+                    </tr>
+                </thead>
+                <tbody id="result-body"></tbody>
+            </table>
+
+            <p class="result-not-found" hidden>Nincs találat!</p>
+        </div>
+    </BODY>
+
+    <script src="./script.js"></script>
+</HTML>

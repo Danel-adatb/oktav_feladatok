@@ -25,5 +25,19 @@ services:
     ports:
       - "8080:80"
 
+  # PHP + Apache szerver a backend-frontend mappa kiszolgálásához.
+  php:
+    build:
+      context: ./backend-frontend
+    container_name: php
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - "8000:80"
+    volumes:
+      # A mappa élőben be van csatolva: szerkesztés után nem kell újraépíteni.
+      - ./backend-frontend:/var/www/html
+
 volumes:
   mysql_data:
