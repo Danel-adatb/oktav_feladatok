@@ -5,14 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gyartok"
         mc:Ignorable="d"
-        Title="Gyártók" Height="406" Width="800">
-    <Grid Margin="10,10,10,10">
-        
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged" Margin="10,10,180,10"/>
-        <Button Content="Darabszám" HorizontalAlignment="Left" Margin="605,25,0,0" VerticalAlignment="Top" Height="20" Width="165"/>
-        <Button Content="Legtöbb leányvállalat" HorizontalAlignment="Left" Margin="605,68,0,0" VerticalAlignment="Top" Height="20" Width="165"/>
-        <Button Content="Kilépés" HorizontalAlignment="Left" Margin="605,340,0,0" VerticalAlignment="Top" Height="20" Width="165"/>
+        Title="Gyártók" Height="406" Width="800"
+        Loaded="Window_Loaded">
+    <Grid Margin="10">
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="GyartokDataGrid"
+                  Grid.Column="0"
+                  IsReadOnly="True"
+                  SelectionUnit="FullRow"
+                  SelectionMode="Single"
+                  ColumnWidth="*"
+                  AutoGenerateColumns="True"/>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Button x:Name="CountBtn"
+                    Grid.Row="0"
+                    Content="Darabszám"
+                    Margin="10,15" 
+                    Padding="5"
+                    Click="countBtn_Click"/>
+            
+            <Button x:Name="SubvirseryBtn" 
+                    Grid.Row="1"
+                    Content="Legtöbb leányvállalat"
+                    Margin="10,15" 
+                    Padding="5"
+                    Click="subvirseryCountBtn_Click"/>
+            
+            <Button x:Name="ExitBtn"
+                    Grid.Row="3"
+                    Content="Kilépés"
+                    Margin="10,15" 
+                    Padding="5"
+                    Click="exitBtn_Click"/>
+        </Grid>
 
     </Grid>
 </Window>
