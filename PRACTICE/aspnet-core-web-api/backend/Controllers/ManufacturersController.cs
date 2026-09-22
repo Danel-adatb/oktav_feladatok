@@ -57,16 +57,16 @@ public class ManufacturersController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> PutManufacturer(int? id, ManufacturerDTO dto)
     {
-        var manufacturer = new Manufacturer
-        {
-            Name = dto.Name,
-            Founded = dto.Founded,
-            Nationality = dto.Nationality,
-            Subsidiary = dto.Subsidiary,
+        var manufacturer = await _context.manufacturers.FirstOrDefaultAsync(x => x.Id == id);
 
-        };
+        if(manufacturer == null) return NoContent();
 
-        _context.Entry(manufacturer).State = EntityState.Modified;
+        manufacturer.Name = dto.Name;
+        manufacturer.Founded = dto.Founded;
+        manufacturer.Nationality = dto.Nationality;
+        manufacturer.Subsidiary = dto.Subsidiary;
+        
+        _context.manufacturers.Update(manufacturer);
 
         try
         {
@@ -84,7 +84,11 @@ public class ManufacturersController : ControllerBase
             }
         }
 
-        return NoContent();
+        return Ok(new
+        {
+            message = "Sikeres frissítés!",
+            result = manufacturer
+        });
     }
 
     // DELETE: api/Manufacturer/5

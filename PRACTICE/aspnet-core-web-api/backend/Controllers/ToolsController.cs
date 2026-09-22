@@ -38,17 +38,19 @@ public class ToolsController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> PutTool(int? id, ToolDTO dto)
     {
-        var tool = new Tool
-        {
-            Serial = dto.Serial,
-            Manufacturer = dto.Manufacturer,
-            Type = dto.Type,
-            Price = dto.Price,
-            Source = dto.Source,
-            RentPrice = dto.RentPrice,
-        };
+        
+        var tool = await _context.tools.FirstOrDefaultAsync(x => x.Id == id);
 
-        _context.Entry(tool).State = EntityState.Modified;
+        if (tool == null) return NoContent();
+
+        tool.Serial = dto.Serial;
+        tool.Manufacturer = dto.Manufacturer;
+        tool.Type = dto.Type;
+        tool.Price = dto.Price;
+        tool.Source = dto.Source;
+        tool.RentPrice = dto.RentPrice;
+
+        _context.tools.Update(tool);
 
         try
         {
@@ -66,7 +68,11 @@ public class ToolsController : ControllerBase
             }
         }
 
-        return NoContent();
+        return Ok(new
+        {
+            message = "Sikeres frissítés!",
+            result = tool
+        });
     }
 
     // POST: api/Tool
@@ -111,7 +117,7 @@ public class ToolsController : ControllerBase
     }
 
     //Feladatok (backend)
-    [HttpPost("task/{manufacturer}/{price}")]
+    [HttpPost("task/{tool}/{price}")]
     public async Task<ActionResult<Tool>> PostQuery(string? manufacturer, int? price)
     {
         if((manufacturer == null || manufacturer == "") || (price == null || price <= 0))

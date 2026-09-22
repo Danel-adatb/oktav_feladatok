@@ -8,6 +8,19 @@ var connectionString = builder.Configuration.GetConnectionString("DatabaseContex
 //Microsoft.EntityFramework telepítése!
 //Microsoft.EntityFramework.Tools telepítése!
 //MySQL.EntityFramework telepítése!
+//Scalar telepítése ls config:
+/**
+ "https": {
+  "commandName": "Project",
+  "dotnetRunMessages": true,
+  "launchBrowser": true,
+  "launchUrl": "scalar/v1",
+  "applicationUrl": "https://localhost:7161;http://localhost:5255",
+  "environmentVariables": {
+    "ASPNETCORE_ENVIRONMENT": "Development"
+  }
+}
+ */
 
 builder.Services.AddDbContext<DatabaseContext>();
 // Add services to the container.
@@ -22,6 +35,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    //Ezt hozzáadni
     app.MapScalarApiReference();
 }
 
