@@ -129,7 +129,7 @@ namespace gyartok
                 using MySqlCommand cmd = new MySqlCommand(query, conn);
 
                 object? result = cmd.ExecuteScalar();
-                string name = result.ToString() ?? "";
+                string name = result?.ToString() ?? "";
 
                 MessageBox.Show(
                     $"A legtöbb leányvállalattal rendelkező cég: {name}!",
