@@ -1,0 +1,79 @@
+﻿<Window x:Class="autoform.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:autoform"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Autók táblázata -->
+        <DataGrid x:Name="AutokDataGrid"
+                  Grid.Row="0"
+                  AutoGenerateColumns="True"
+                  ColumnWidth="*"
+                  Margin="0,0,0,10" />
+
+        <!-- Alsó vezérlősáv -->
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Eredmény lista -->
+            <StackPanel Grid.Column="0"
+                        Margin="0,0,10,0">
+
+                <TextBlock Text="Sportautók listája"
+                            Margin="0,0,0,5" />
+
+                <ListBox x:Name="resultListBox" 
+                         Height="80"
+                         HorizontalAlignment="Left"
+                         Width="160" />
+
+            </StackPanel>
+            <!-- Bemeneti mező -->
+            <Label Content="Év:" Grid.Column="1" VerticalAlignment="Center" />
+            <TextBox x:Name="inputTextBox"
+                     Grid.Column="1"                     
+                     Height="30"
+                     Width="150"
+                     VerticalAlignment="Center"
+                     Margin="25,0,10,0"
+                     TextChanged="inputTextBox_TextChanged"
+                     />
+
+            <!-- Betöltés -->
+            <Button x:Name="loadBtn"
+                    Grid.Column="3"
+                    Content="Betölt"
+                    Height="30"
+                    Width="160"
+                    Margin="0,0,10,0"
+                    Padding="10,5"
+                    Click="loadBtn_Click" />
+
+            <!-- Kilépés -->
+            <Button x:Name="exitBtn"
+                    Grid.Column="4"
+                    Content="Kilépés"
+                    Height="30"
+                    Width="160"
+                    Padding="5,5"
+                    Click="exitBtn_Click" />
+
+        </Grid>
+    </Grid>
+</Window>
