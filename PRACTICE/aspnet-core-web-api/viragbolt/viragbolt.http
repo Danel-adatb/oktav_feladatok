@@ -1,0 +1,6 @@
+@viragbolt_HostAddress = http://localhost:5217
+
+GET {{viragbolt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
