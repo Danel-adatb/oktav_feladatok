@@ -25,6 +25,8 @@ var connectionString = builder.Configuration.GetConnectionString("DatabaseContex
  //Migration: Add-Migration viragbolt
  //Update: Update-Database
 
+ //Jobb ha AppSettings.json-ba rakjuk a Connection Stringet
+
 builder.Services.AddDbContext<DatabaseContext>();
 // Add services to the container.
 
