@@ -1,42 +1,57 @@
 import "../App.css"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {useEffect, useState} from "react";
 
-function Megrendeles() {
+function Flowers() {
+    const [data, setData] = useState([]);
+    const navigate  = useNavigate();
+
+    useEffect(() => {
+        fetch("https://localhost:7131/api/flowers")
+            .then(res => {
+                if(!res.ok) {
+                    throw new Error(`HTTP error: ${res.status}`);
+                }
+
+                return res.json();
+            })
+            .then(data => {
+                console.log("Flowers:", data);
+                setData(data);
+            })
+            .catch(error => {
+                console.error("Fetch error:", error);
+            });
+    }, []);
+
     return (
         <>
             <div>
                 <header>
-                    <Link to="/index">
+                    <Link to="/">
                         <img
                             src="/public/assets/sunflower.jpg"
                             alt="fa"
                             id="logo"
                         />
                     </Link>
-
                     <h1>Nevenincs Bt.</h1>
                     <h2>Vetőmagok - Mindenféle, minden mennyiségben</h2>
                 </header>
                 <main className={"container"}>
-                    <h2>Dália (Kerti virág)</h2>
                     <div className="row">
-                        <div className="col-md-6">
-                            <img src="../../public/assets/dalia.jpg" alt="Dália" className="img-thumbnail"/>
-                        </div>
-                        <div className="col-md-6">
-                            <p>A dáliák gumós, fagyérzékeny évelők. Tápanyagdús talajban virágoznak a legszebben.
-                                Vízigényük közepes, virágzásuk idején rendszeres vízellátást igényelnek. Virágzási
-                                idejük júliustól októberig tart. Kiválóan alkalmasak vágott virágnak. </p>
-                            <form>
-                                <p className="text-center"><span id="ar">Ár: 356 Ft</span>
-                                    <label htmlFor="mennyiseg">Mennyiség:</label>
-                                    <input type="number" name="mennyiseg" id="mennyiseg" min="1" max="999" value="1"/>
-                                </p>
-                                <p className="text-center">
-                                    <button className="btn btn-warning btn-lg">Megrendelem</button>
-                                </p>
-                            </form>
-                        </div>
+                        <h2>Vetőmagjaink:</h2>
+                        {data.map((item) => (
+                            <div className="col-lg-4 mt-4 arukep" key={item.id}>
+                                <h4>{item.pName}</h4>
+                                <img
+                                    src={item.imgUrl}
+                                    alt={item.pName}
+                                    className="img-fluid"
+                                    onClick={() => navigate(`/rendeles/${item.id}`)}
+                                />
+                            </div>
+                        ))}
                     </div>
                 </main>
                 <footer className="container-fluid">
@@ -71,4 +86,4 @@ function Megrendeles() {
     );
 }
 
-export default Megrendeles
+export default Flowers

@@ -1,6 +1,6 @@
 import "../App.css"
 
-function NemTalalt() {
+function NotFound() {
     return (
         <>
             404 - NOT FOUND
@@ -8,4 +8,4 @@ function NemTalalt() {
     );
 }
 
-export default NemTalalt
+export default NotFound

@@ -2,32 +2,32 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 import Index from "./pages/Index.jsx";
-import Megrendeles from "./pages/Megrendeles.jsx";
-import Aruk from "./pages/Aruk.jsx";
-import NemTalalt from "./pages/NemTalalt.jsx";
+import Order from "./pages/Order.jsx";
+import Flowers from "./pages/Flowers.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 function App() {
     return (
         <>
             <Routes>
                 <Route
-                    path="/index"
+                    path="/"
                     element={<Index />}
                 />
 
                 <Route
-                    path="/megrendeles"
-                    element={<Megrendeles />}
+                    path="/rendeles/:id"
+                    element={<Order />}
                 />
 
                 <Route
-                    path="/aruk"
-                    element={<Aruk />}
+                    path="/flowers"
+                    element={<Flowers />}
                 />
 
                 <Route
                     path="*"
-                    element={<NemTalalt />}
+                    element={<NotFound />}
                 />
             </Routes>
         </>

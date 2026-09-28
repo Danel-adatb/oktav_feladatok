@@ -7,7 +7,7 @@ function Index() {
         <>
             <div id="nyito">
                 <header>
-                    <Link to="/index">
+                    <Link to="/">
                         <img
                             src="/public/assets/sunflower.jpg"
                             alt="fa"
@@ -19,8 +19,8 @@ function Index() {
                     <h2>Vetőmagok - Mindenféle, minden mennyiségben</h2>
                 </header>
                 <main>
-                    <Link to={"/aruk"}>
-                        <a>Válasszon vetőmagjainkból!</a>
+                    <Link to={"/flowers"}>
+                        Válasszon vetőmagjainkból!
                     </Link>
                 </main>
                 <footer className="container-fluid">
