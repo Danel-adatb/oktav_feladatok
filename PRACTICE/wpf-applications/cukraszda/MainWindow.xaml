@@ -1,0 +1,31 @@
+﻿<Window x:Class="cukraszda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cukraszda"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0">
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Fájl">
+                    <MenuItem Header="_Megnyitás..." Click="Megnyitas_Click" />
+                    <Separator />
+                    <MenuItem Header="_Kilépés" Click="Kilepes_Click"/>
+                </MenuItem>
+
+                <MenuItem x:Name="SutemenyekMenu" Header="_Sütemények" IsEnabled="False" Click="Sutemenyek_Click" />
+                <MenuItem Header="_Névjegy" Click="Nevjegy_Click"/>
+            </Menu>
+
+            <TextBlock x:Name="Allapotszoveg"
+                       Text="Nyisson meg egy árlista adatáfjlt a Fájl menüpontból."
+                       Margin="20"
+                       FontSize="14"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center" />
+        </DockPanel>
+    </Grid>
+</Window>

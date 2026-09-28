@@ -1,0 +1,57 @@
+﻿<Window x:Class="cukraszda.PriceListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cukraszda"
+        mc:Ignorable="d"
+        Title="PriceListWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock 
+            Grid.Row="0" 
+            Grid.ColumnSpan="2" 
+            x:Name="Arlista" 
+            HorizontalAlignment="Center" 
+            FontSize="30" 
+            FontStyle="Italic" 
+            FontWeight="Bold" 
+            FontFamily="Times New Roman"
+        >
+            ÁRLISTA
+        </TextBlock>
+
+        <GroupBox Grid.Row="1">
+            <ListBox x:Name="SutemenyLista" BorderThickness="0"
+                 HorizontalContentAlignment="Stretch">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <!-- EGY sor: pipa | név (ár) | adag mező -->
+                        <StackPanel Orientation="Horizontal" Margin="2">
+                            <CheckBox IsChecked="{Binding Chosen}" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding Name}"  VerticalAlignment="Center" Margin="6,0,0,0" />
+                            <TextBlock Text=" ("             VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding Price}" VerticalAlignment="Center" />
+                            <TextBlock Text=" Ft)"           VerticalAlignment="Center" />
+                            <TextBlock Text="adag:" VerticalAlignment="Center" Margin="14,0,4,0" />
+                            <TextBox Text="{Binding Portion}" Width="45" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+
+        <Button x:Name="RendelGomb" Grid.Row="2" Content="Rendel" Margin="0,10,0,0" Padding="8" Click="Rendel_Click">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Számlát kér" Click="Szamla_Click" />
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+    </Grid>
+</Window>
