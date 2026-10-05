@@ -1,0 +1,36 @@
+<HTML lang="hu">
+    <HEAD>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>
+            Kerékpárok
+        </title>
+        <Link rel="stylesheet" href="./style.css">
+    </HEAD>
+
+    <BODY>
+        <div id="filter">
+            <label>Típus:</label>
+            <input type="text" id="tipus" name="tipus" placeholder="Ide írj a szűréshez" />
+        </div>
+
+        <div id="results">
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <td>Gyártó</td>
+                        <td>Típus</td>
+                        <td>Bérlési díj</td>
+                    </tr>
+                </thead>
+                <tbody id="result-body">
+                    
+                </tbody>
+            </table>
+
+            <p id="result-not-found" hidden>Nincs találat!</p>
+        </div>
+
+        <script src="./script.js"></script>
+    </BODY>
+</HTML>
