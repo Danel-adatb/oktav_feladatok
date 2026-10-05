@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utaskísérőink</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #e8eef5;
+    }
+
+    h1 {
+      text-align: center;
+      color: #12355b;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .card {
+      width: 280px;
+      height: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #ffffff;
+      border: 1px solid #999;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #12355b;
+    }
+
+    .title {
+      margin-top: 5px;
+      color: #4a5b70;
+    }
+
+    .email {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #0a7abf;
+    }
+  </style>
+</head>
+<body>
+  <h1>Utaskísérőink</h1>
+  <div class="grid-container">
+    <div class="card">
+      <img src="images/kisero1.jpeg" alt="Bálint Nóra">
+      <div class="name">Bálint Nóra</div>
+      <div class="title">Fő utaskísérő</div>
+      <div class="email">nora@magasan.hu</div>
+    </div>
+    <div class="card">
+      <img src="images/kisero2.jpeg" alt="Fekete Dániel">
+      <div class="name">Fekete Dániel</div>
+      <div class="title">Utaskísérő</div>
+      <div class="email">daniel@magasan.hu</div>
+    </div>
+    <div class="card">
+      <img src="images/kisero3.jpeg" alt="Orsós Petra">
+      <div class="name">Orsós Petra</div>
+      <div class="title">Földi kiszolgálás</div>
+      <div class="email">petra@magasan.hu</div>
+    </div>
+  </div>
+</body>
+</html>

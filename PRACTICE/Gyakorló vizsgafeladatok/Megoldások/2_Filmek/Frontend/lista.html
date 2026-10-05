@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmek</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        div {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            border-radius: 6px;
+        }
+
+        #filter input {
+            padding: 4px 8px;
+            margin-left: 8px;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 4px 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3a6ea5;
+            color: white;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #eef3f8;
+        }
+    </style>
+
+    <script>
+        async function frissit() {
+            var ertek = document.getElementById("kereso").value;
+
+            var valasz = await fetch("mufaj.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: "mufaj=" + encodeURIComponent(ertek)
+            });
+
+            var adatok = await valasz.json();
+            megjelenit(adatok);
+        }
+
+        function megjelenit(adatok) {
+            var div = document.getElementById("results");
+
+            if (adatok.length === 0) {
+                div.innerHTML = "<p>Nincs találat!</p>";
+                return;
+            }
+
+            var tabla = "<table><tr><th>Stúdió</th><th>Műfaj</th><th>Bevétel (M$)</th></tr>";
+            for (var i = 0; i < adatok.length; i++) {
+                tabla += "<tr>" +
+                         "<td>" + adatok[i].studio + "</td>" +
+                         "<td>" + adatok[i].mufaj + "</td>" +
+                         "<td>" + adatok[i].bevetel + " M$" + "</td>" +
+                         "</tr>";
+            }
+            tabla += "</table>";
+            div.innerHTML = tabla;
+        }
+
+        window.onload = frissit;
+    </script>
+</head>
+<body>
+    <div id="filter">
+        <label for="kereso">Műfaj:</label>
+        <input type="text" id="kereso" placeholder="Ide írj a szűréshez!" oninput="frissit()">
+    </div>
+
+    <div id="results"></div>
+</body>
+</html>

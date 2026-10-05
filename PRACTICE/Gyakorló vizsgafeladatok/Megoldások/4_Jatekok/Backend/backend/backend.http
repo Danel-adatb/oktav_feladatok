@@ -1,0 +1,6 @@
+@backend_HostAddress = http://localhost:5199
+
+POST {{backend_HostAddress}}/api/jatekok?kiado=&ar=0
+Accept: application/json
+
+###

@@ -1,0 +1,151 @@
+sorszám,gyártó,kerékpár típusa,ár,hajtás,bérlési díj
+1,Trek,trekking,1138662,500W e-bike,6800
+2,Giant,városi,1229430,500W e-bike,18000
+3,Specialized,gravel,993245,500W e-bike,0
+4,Trek,országúti,350000,250W e-bike,0
+5,Specialized,gravel,733215,500W e-bike,7900
+6,Cube,gravel,1141653,500W e-bike,0
+7,Cube,országúti,1191299,500W e-bike,8000
+8,Specialized,BMX,1272316,500W e-bike,0
+9,Specialized,trekking,1034432,250W e-bike,0
+10,Merida,városi,350000,250W e-bike,6500
+11,Merida,gravel,1164264,250W e-bike,17400
+12,Scott,városi,350000,500W e-bike,2200
+13,Trek,BMX,1463105,500W e-bike,18100
+14,Giant,gravel,339641,mechanikus,5800
+15,Specialized,városi,1236411,250W e-bike,12300
+16,Canyon,BMX,1070824,500W e-bike,13300
+17,Cube,trekking,157153,mechanikus,2400
+18,Scott,városi,827943,250W e-bike,14400
+19,Scott,városi,979571,250W e-bike,4500
+20,Cube,trekking,350000,250W e-bike,6700
+21,Merida,trekking,464990,250W e-bike,8400
+22,Trek,BMX,1110379,250W e-bike,0
+23,Specialized,gravel,1010938,mechanikus,0
+24,Trek,gravel,1209954,500W e-bike,19200
+25,Giant,MTB,1361045,mechanikus,30800
+26,Specialized,BMX,406005,250W e-bike,6200
+27,Canyon,gravel,366558,500W e-bike,5600
+28,Merida,BMX,685086,500W e-bike,4800
+29,Giant,városi,1129421,250W e-bike,7700
+30,Canyon,MTB,350000,250W e-bike,7400
+31,Trek,trekking,813956,500W e-bike,3600
+32,Merida,gravel,1488310,250W e-bike,32400
+33,Scott,gravel,1356824,500W e-bike,21000
+34,Giant,gravel,778469,500W e-bike,13400
+35,Trek,városi,350000,250W e-bike,2500
+36,Specialized,városi,1015888,mechanikus,7700
+37,Specialized,BMX,354661,mechanikus,6800
+38,Merida,MTB,1444864,mechanikus,13400
+39,Merida,gravel,874312,mechanikus,6400
+40,Scott,gravel,679478,250W e-bike,9500
+41,Scott,országúti,1164815,500W e-bike,6800
+42,Giant,MTB,280899,mechanikus,2900
+43,Merida,BMX,145360,mechanikus,1500
+44,Specialized,városi,533112,500W e-bike,5000
+45,Canyon,városi,529583,500W e-bike,4800
+46,Merida,MTB,630098,mechanikus,4600
+47,Specialized,országúti,469661,250W e-bike,6500
+48,Cube,városi,686954,mechanikus,6200
+49,Trek,országúti,616424,250W e-bike,3100
+50,Giant,országúti,350000,250W e-bike,5300
+51,Canyon,trekking,1023621,250W e-bike,18300
+52,Trek,gravel,1334220,250W e-bike,16400
+53,Specialized,országúti,856881,500W e-bike,19700
+54,Cube,gravel,819059,250W e-bike,10200
+55,Trek,trekking,766296,500W e-bike,14500
+56,Trek,trekking,743599,250W e-bike,10800
+57,Cube,MTB,350000,500W e-bike,2500
+58,Trek,országúti,347535,mechanikus,5700
+59,Specialized,trekking,959592,mechanikus,11600
+60,Scott,MTB,1446224,250W e-bike,10900
+61,Trek,BMX,1198700,500W e-bike,25500
+62,Canyon,MTB,137016,mechanikus,1800
+63,Cube,trekking,1373607,mechanikus,0
+64,Giant,városi,1421886,mechanikus,19900
+65,Cube,trekking,1155772,500W e-bike,5800
+66,Canyon,országúti,587481,500W e-bike,0
+67,Giant,BMX,398949,500W e-bike,8300
+68,Specialized,trekking,1240848,mechanikus,25800
+69,Cube,trekking,1394468,250W e-bike,18400
+70,Canyon,BMX,729192,500W e-bike,8700
+71,Scott,országúti,1161719,250W e-bike,5400
+72,Giant,országúti,853559,250W e-bike,5700
+73,Specialized,országúti,1182222,mechanikus,20700
+74,Cube,városi,895389,mechanikus,20500
+75,Canyon,BMX,413988,500W e-bike,2300
+76,Specialized,gravel,1211267,250W e-bike,22200
+77,Specialized,MTB,689302,mechanikus,7500
+78,Scott,MTB,1379009,500W e-bike,22900
+79,Scott,trekking,439739,500W e-bike,3200
+80,Merida,MTB,148908,mechanikus,2500
+81,Specialized,BMX,857065,mechanikus,7000
+82,Giant,városi,598129,500W e-bike,6100
+83,Trek,BMX,870268,mechanikus,14400
+84,Cube,gravel,350000,250W e-bike,7000
+85,Specialized,gravel,796084,500W e-bike,0
+86,Trek,gravel,633771,250W e-bike,4600
+87,Scott,városi,769330,500W e-bike,13900
+88,Canyon,gravel,732180,250W e-bike,9500
+89,Canyon,BMX,807419,250W e-bike,12500
+90,Giant,MTB,1250672,250W e-bike,15500
+91,Cube,országúti,635861,250W e-bike,5800
+92,Merida,BMX,569339,250W e-bike,8500
+93,Trek,trekking,1266469,250W e-bike,14900
+94,Merida,BMX,1470419,250W e-bike,25300
+95,Scott,BMX,1457782,500W e-bike,11700
+96,Cube,BMX,350000,250W e-bike,2500
+97,Cube,városi,606133,500W e-bike,10000
+98,Scott,gravel,783012,250W e-bike,0
+99,Giant,BMX,1443872,mechanikus,14900
+100,Canyon,MTB,1144283,250W e-bike,12800
+101,Merida,BMX,1193787,mechanikus,0
+102,Trek,MTB,539965,250W e-bike,8500
+103,Giant,BMX,350000,250W e-bike,4900
+104,Merida,városi,311028,mechanikus,3700
+105,Giant,városi,1141236,500W e-bike,24800
+106,Specialized,BMX,793355,250W e-bike,10500
+107,Scott,trekking,350000,250W e-bike,1500
+108,Canyon,trekking,1044203,250W e-bike,14600
+109,Specialized,gravel,537595,250W e-bike,0
+110,Scott,országúti,1411677,500W e-bike,20200
+111,Canyon,trekking,1352092,250W e-bike,31100
+112,Merida,trekking,741676,250W e-bike,5500
+113,Merida,MTB,1171533,250W e-bike,19000
+114,Merida,MTB,1039246,mechanikus,14400
+115,Merida,MTB,522810,500W e-bike,10000
+116,Specialized,gravel,1234694,mechanikus,12700
+117,Specialized,gravel,1350743,500W e-bike,9400
+118,Merida,BMX,384134,mechanikus,7500
+119,Merida,országúti,350000,500W e-bike,7800
+120,Giant,MTB,1196709,250W e-bike,15400
+121,Giant,BMX,470696,mechanikus,7700
+122,Scott,városi,705226,mechanikus,15000
+123,Trek,gravel,923158,500W e-bike,6300
+124,Merida,országúti,350000,250W e-bike,0
+125,Merida,BMX,616336,500W e-bike,4400
+126,Giant,országúti,1448443,250W e-bike,29500
+127,Giant,MTB,1102217,500W e-bike,15900
+128,Canyon,gravel,956470,500W e-bike,16900
+129,Cube,BMX,992957,500W e-bike,15700
+130,Trek,MTB,490118,500W e-bike,5300
+131,Specialized,városi,413117,500W e-bike,6800
+132,Giant,gravel,1210994,mechanikus,25900
+133,Specialized,trekking,837407,250W e-bike,0
+134,Merida,gravel,815499,250W e-bike,4900
+135,Giant,városi,825466,mechanikus,13400
+136,Trek,BMX,1237334,500W e-bike,28200
+137,Trek,gravel,798559,250W e-bike,11300
+138,Merida,országúti,697038,250W e-bike,0
+139,Trek,országúti,1016577,500W e-bike,19900
+140,Canyon,városi,1346490,250W e-bike,9400
+141,Cube,MTB,305401,mechanikus,0
+142,Merida,trekking,184766,mechanikus,3400
+143,Merida,országúti,775734,500W e-bike,17500
+144,Giant,trekking,1049707,500W e-bike,9000
+145,Canyon,trekking,350000,250W e-bike,2600
+146,Giant,országúti,1065604,500W e-bike,15200
+147,Scott,MTB,350000,250W e-bike,2300
+148,Giant,városi,637785,250W e-bike,11600
+149,Trek,trekking,1154170,500W e-bike,7300
+150,Cube,MTB,350000,500W e-bike,4100

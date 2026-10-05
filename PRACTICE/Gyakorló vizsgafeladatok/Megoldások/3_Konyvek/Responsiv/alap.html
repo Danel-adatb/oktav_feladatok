@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Könyvtárosaink</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fdf6e3;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5b4636;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .card {
+      width: 260px;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #fffdf7;
+      border: 2px solid #bbb;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #5b4636;
+    }
+
+    .title {
+      margin-top: 5px;
+      color: #7a6a5a;
+    }
+
+    .email {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #2a7f62;
+    }
+  </style>
+</head>
+<body>
+  <h1>Könyvtárosaink</h1>
+  <div class="grid-container">
+    <div class="card">
+      <img src="images/konyvtaros1.jpeg" alt="Horváth Eszter">
+      <div class="name">Horváth Eszter</div>
+      <div class="title">Főkönyvtáros</div>
+      <div class="email">eszter@olvasosarok.hu</div>
+    </div>
+    <div class="card">
+      <img src="images/konyvtaros2.jpeg" alt="Kiss Gergő">
+      <div class="name">Kiss Gergő</div>
+      <div class="title">Gyermekrészleg</div>
+      <div class="email">gergo@olvasosarok.hu</div>
+    </div>
+    <div class="card">
+      <img src="images/konyvtaros3.jpeg" alt="Nemes Tímea">
+      <div class="name">Nemes Tímea</div>
+      <div class="title">Kölcsönzés</div>
+      <div class="email">timea@olvasosarok.hu</div>
+    </div>
+  </div>
+</body>
+</html>
