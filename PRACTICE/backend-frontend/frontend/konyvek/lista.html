@@ -1,0 +1,30 @@
+<HTML lang="HU">
+    <HEAD>
+        <title>Könyvek</title>
+        <meta charset="UTF8">
+        <link rel="stylesheet" href="./style.css">
+    </HEAD>
+    <BODY>
+        <div id="filter">
+            <label>Műfaj: </label>
+            <input type="text" id="mufaj" placeholder="Ide írj" />
+        </div>
+        <div id="results">
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <td>Kiadó</td>
+                        <td>Műfaj</td>
+                        <td>Készlet</td>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                </tbody>
+            </table>
+
+            <p hidden id="results-not">Nincs találat!</p>
+        </div>
+
+        <script src="./script.js"></script>
+    </BODY>
+</HTML>
